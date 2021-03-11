@@ -6,7 +6,7 @@ For a more readable version of this document, see [Readme.pdf](Readme.pdf).
 
 In this assignment you will implement forward and inverse kinematics of a two-bar linkage. 
 
-![image-20210311145042446](/home/moritz/code/cmm21/s1/linkage.png)
+![image-20210311145042446](linkage.png)
 
 ## 1 - Forward Kinematics
 
@@ -52,7 +52,7 @@ Now we are ready to solve inverse kinematics. We want to construct an objective 
    
 2. Implement the *analytic* gradient 
    $$
-   \frac{\partial e}{\partial x} = \nabla_xe.
+   \frac{\partial f}{\partial x} = \nabla_xf.
    $$
    **Code:** `InverseKinematics::gradient(x)`. 
    **Hint:** Leverage the functions you implemented in part 2!
@@ -60,7 +60,7 @@ Now we are ready to solve inverse kinematics. We want to construct an objective 
 
 3. Implement the *analytic* Hessian
    $$
-   \frac{\partial^2e}{\partial x^2}.
+   \frac{\partial^2f}{\partial x^2} = \nabla_x^2f.
    $$
    **Code:** `InverseKinematics::hessian(x)`.
    **Hint:** Leverage the functions you implemented in part 2!

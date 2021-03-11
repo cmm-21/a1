@@ -7,7 +7,7 @@ using Eigen::Vector2d;
 
 /*
  *
- *  *                  o < p2 = end-effector position
+ *  *               o < p2 = end-effector position
  *                 /
  *                / bar2
  *   a1    bar1  /
